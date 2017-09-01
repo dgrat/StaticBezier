@@ -1,0 +1,4 @@
+[Project]
+Name=simple_ffd
+Manager=KDevCMakeManager
+VersionControl=kdevgit
