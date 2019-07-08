@@ -1,0 +1,37 @@
+[CMake]
+Build Directory Count=1
+Current Build Directory Index-Host-System=0
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=/home/varg/StaticBezier/build
+Build Type=Debug
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+Runtime=Host-System
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=simple_ffd
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x18\x00S\x00t\x00a\x00t\x00i\x00c\x00B\x00e\x00z\x00i\x00e\x00r\x00\x00\x00\x14\x00s\x00i\x00m\x00p\x00l\x00e\x00_\x00f\x00f\x00d)
+Dependency Action=Build
+EnvironmentGroup=
+Executable=file:///home/varg/StaticBezier
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=StaticBezier,simple_ffd
+Use External Terminal=false
+Working Directory=
+isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit

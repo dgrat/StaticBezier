@@ -4,7 +4,6 @@
 #include <iostream>
 
 #include "array_access.h"
-#include "glm_include.h"
 #include "static_size.h"
 #include "enumerations.h"
 #include "bernstein.h"
@@ -33,7 +32,7 @@ namespace detail {
 				constexpr size_t k = inds[Iter];
 				static_assert(n >= k, "Error in Iterate::Dim::ID::run(): n < k");
 
-				qDebug() << n << "/" << k << inp[Iter];
+				//qDebug() << n << "/" << k << inp[Iter];
 				return (
 					  bernstein::polynomial<n, k>(inp[Iter])
 					* Iterate<Iter-1>::template Dim<Ds...>::template ID<Is...>::template run(inp) // recursion
@@ -61,7 +60,7 @@ namespace detail {
 				constexpr size_t k = inds[0];
 				static_assert(n >= k, "Error in Iterate::Dim::ID::run(): n < k");
 
-				qDebug() << "\t" << n << "/" << k << inp[0];
+				//qDebug() << "\t" << n << "/" << k << inp[0];
 				return bernstein::polynomial<n, k>(inp[0]);
 			}
 		};
