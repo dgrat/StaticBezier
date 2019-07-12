@@ -55,7 +55,7 @@ namespace stl {
             const std::vector<face> &faces() const;
            
            
- //! estimates the bbox
+            //! estimates the bbox
             bbox estimate_bbox(const std::vector<face> &) const;
             //! Scaled down to 0 <= x <= 1
             std::vector<face> normalized(const bbox &) const;
